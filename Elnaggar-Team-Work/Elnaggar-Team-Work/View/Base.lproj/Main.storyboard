@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Elnaggar_Team_Work" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7s6-wv-vno">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sl-V4-e41">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iY3-WO-cEo">
+                                                <rect key="frame" x="0.0" y="288" width="393" height="522"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CourseCellTableViewCell" id="7Yg-Sv-GD5" customClass="CourseCellTableViewCell" customModule="Elnaggar_Team_Work" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Yg-Sv-GD5" id="QgU-mN-cOJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="y0w-bv-gpI"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DsL-Jo-uuM"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="iY3-WO-cEo" firstAttribute="leading" secondItem="7sl-V4-e41" secondAttribute="leading" id="QCI-0w-X8u"/>
+                                            <constraint firstAttribute="bottom" secondItem="iY3-WO-cEo" secondAttribute="bottom" constant="42" id="dnl-bi-G1o"/>
+                                            <constraint firstAttribute="trailing" secondItem="iY3-WO-cEo" secondAttribute="trailing" id="mz8-Mo-N3J"/>
+                                            <constraint firstItem="iY3-WO-cEo" firstAttribute="top" secondItem="7sl-V4-e41" secondAttribute="top" constant="288" id="qvW-lc-9ir"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7sl-V4-e41" secondAttribute="bottom" id="Fk9-9N-Eep"/>
+                                    <constraint firstItem="7sl-V4-e41" firstAttribute="leading" secondItem="7s6-wv-vno" secondAttribute="leading" id="I3a-QF-50v"/>
+                                    <constraint firstAttribute="trailing" secondItem="7sl-V4-e41" secondAttribute="trailing" id="Z8g-kK-H3L"/>
+                                    <constraint firstItem="7sl-V4-e41" firstAttribute="height" secondItem="7s6-wv-vno" secondAttribute="height" priority="250" id="aoH-fA-dne"/>
+                                    <constraint firstItem="7sl-V4-e41" firstAttribute="top" secondItem="7s6-wv-vno" secondAttribute="top" id="k99-Eh-wt2"/>
+                                    <constraint firstItem="7sl-V4-e41" firstAttribute="width" secondItem="7s6-wv-vno" secondAttribute="width" id="yZn-Jz-Cpm"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Rv6-yM-PXb"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="LiB-4M-gkC"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7s6-wv-vno" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6un-T3-0Ic"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="7s6-wv-vno" secondAttribute="top" constant="59" id="Zws-Uy-8EO"/>
+                            <constraint firstItem="7s6-wv-vno" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="mpN-IC-QX0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7s6-wv-vno" secondAttribute="trailing" id="oZN-tz-RqA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coursesTableView" destination="iY3-WO-cEo" id="5Hb-R8-tqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

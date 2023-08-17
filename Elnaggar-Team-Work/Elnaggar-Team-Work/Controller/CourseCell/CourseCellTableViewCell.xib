@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseCellTableViewCell" rowHeight="344" id="KGk-i7-Jjw" customClass="CourseCellTableViewCell" customModule="Elnaggar_Team_Work" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="344"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="344"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="odg-q8-Thw">
+                        <rect key="frame" x="0.0" y="0.0" width="448" height="177"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="177" id="xY6-rk-Nkg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5e3-kg-H9D">
+                        <rect key="frame" x="25" y="200" width="65.333333333333329" height="28.666666666666657"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="ead-S4-j3b">
+                        <rect key="frame" x="213" y="237" width="220" height="8"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJh-VJ-W35">
+                                <rect key="frame" x="0.0" y="0.0" width="52" height="8"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="P5X-zE-btU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xal-Fr-fTh">
+                                <rect key="frame" x="42" y="0.0" width="52" height="8"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xPc-tH-g91"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBL-cF-i1K">
+                                <rect key="frame" x="84" y="0.0" width="52" height="8"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xNT-3Q-Rgx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KA2-iO-GR9">
+                                <rect key="frame" x="126" y="0.0" width="52" height="8"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CiO-sA-DmN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5N-x3-kXt">
+                                <rect key="frame" x="168" y="0.0" width="52" height="8"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="n9Q-Dj-jbh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-Wt-gm8">
+                        <rect key="frame" x="20" y="255" width="408" height="70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Rcf-UR-3fY"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xj2-Wt-gm8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="5Kd-TA-zry"/>
+                    <constraint firstItem="ead-S4-j3b" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="5" id="5Ro-HR-qEz"/>
+                    <constraint firstItem="xj2-Wt-gm8" firstAttribute="top" secondItem="ead-S4-j3b" secondAttribute="bottom" constant="10" id="6vx-lh-Dxn"/>
+                    <constraint firstItem="odg-q8-Thw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HAc-LC-GMc"/>
+                    <constraint firstItem="5e3-kg-H9D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="NW1-CT-G1k"/>
+                    <constraint firstItem="ead-S4-j3b" firstAttribute="top" secondItem="odg-q8-Thw" secondAttribute="bottom" constant="60" id="XMS-KV-ZrJ"/>
+                    <constraint firstItem="odg-q8-Thw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ai7-NC-yNZ"/>
+                    <constraint firstAttribute="bottom" secondItem="xj2-Wt-gm8" secondAttribute="bottom" constant="19" id="bcQ-IX-AVT"/>
+                    <constraint firstAttribute="trailing" secondItem="odg-q8-Thw" secondAttribute="trailing" id="l73-7x-caa"/>
+                    <constraint firstAttribute="trailing" secondItem="xj2-Wt-gm8" secondAttribute="trailing" constant="20" id="o3e-UK-DXI"/>
+                    <constraint firstItem="5e3-kg-H9D" firstAttribute="top" secondItem="odg-q8-Thw" secondAttribute="bottom" constant="23" id="w8e-Kj-jJZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="courseDescribtionTextView" destination="xj2-Wt-gm8" id="yEo-KN-Sc8"/>
+                <outlet property="courseImage" destination="odg-q8-Thw" id="c56-rT-TuN"/>
+                <outlet property="courseNameLabel" destination="5e3-kg-H9D" id="ux6-Db-OI2"/>
+            </connections>
+            <point key="canvasLocation" x="239.69465648854961" y="-42.95774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
